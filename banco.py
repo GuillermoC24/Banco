@@ -15,7 +15,7 @@ class BaseDatosDistribuida:
             self.conexiones['nodo1_oracle_A'] = cx_Oracle.connect(
                 user='nodo1_regionA',
                 password='password123',
-                dsn='localhost:1521/XEPDB1'  # Ajusta según tu configuración
+                dsn='localhost:1521/XEPDB1'  
             )
             print("✓ Conectado al Nodo 1 (Oracle - Región A)")
             
@@ -23,7 +23,7 @@ class BaseDatosDistribuida:
             self.conexiones['nodo2_mysql_B'] = mysql.connector.connect(
                 host='localhost',
                 database='nodo2_regionB',
-                user='root',  # Ajusta según tu configuración
+                user='root',  
                 password='admin'
             )
             print("✓ Conectado al Nodo 2 (MySQL - Región B)")
